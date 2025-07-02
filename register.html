@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ONET register </title>
+        <link rel="stylesheet" href="style.css"> 
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+
+    <body class="body">
+        <div class="wrapper">
+            <form action="register.php" method="post">
+                <h1>Register</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="nom" required name="nom">
+                    <i class='bx bxs-user'></i>
+                </div>
+                   
+
+                <div class="input-box">
+                    <input type="text" placeholder="prenom" required name="prenom">
+                    <i class='bx bxs-user'></i>
+                </div>
+            
+
+                <div class="input-box">
+                    <input type="text" placeholder="username" required name="username"> 
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+
+
+                <div class="input-box">
+                    <input type="email" placeholder="donner votre email" required name="email">
+                    <i class='bx bxl-gmail' ></i>
+                </div>
+
+
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required name="password">
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+
+
+
+
+
+                <div class="input-box">
+                    <p class="p"><pre class="lang">    choisir votre genre : </pre></p>
+                    <select class="select" name="genre">
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                    </select>
+                    <i class='bx bx-male-female' ></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="date" name="date">
+                    <i class='bx bxs-cake' ></i>
+                </div>
+
+
+                <div class="input-box">
+                    <input type="tel" placeholder= " Numéro de téléphone" required name="telephone">
+                    <i class='bx bx-mobile-alt'></i>
+                </div>
+                <p style="font-family: myfont;color: rgb(61, 61, 61);;">by signing up you agree to terms of privacy&policy</p>
+
+
+
+                <input type="submit" class="btn" value="Register"/>
+                
+<!--  -->
+
+                <div class="register-link">
+                    <p>already have account ? <a href="login.html">login here</a> </p>
+                </div> 
+                <div class="register-link">
+                    <p>dont want an account ? <a href="index.php">continue as visitor here </a> </p>
+                </div>
+
+            </form>
+        </div>
+    </body>
+</html>
